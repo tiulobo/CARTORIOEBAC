@@ -126,6 +126,7 @@ int main()
            printf("\t1 - Registrar nomes:\n");// \t e responsavel pelo espaçamento
            printf("\t2 - Consultar nomes:\n");
            printf("\t3 - Deletar nomes:\n\n");
+           printf("\t4 - sair do sistema:\n\n");
            printf("Escolha a opcão:");
     
     scanf("%d", &opcao);//amarzenando a escolha do usuario
@@ -151,6 +152,11 @@ int main()
          default://caso nada for encomtrado devemos por default para dizer algo que nao esta diponivel
          printf("esta opção não esta diponivel!\n");
          system("pause");
+         break;
+         
+         case 4:
+         printf("Obrigado por utilizar nosso sistema!\n");
+         return 0;
          break;
   }
     
